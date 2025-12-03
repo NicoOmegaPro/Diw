@@ -49,7 +49,6 @@
             border-radius: 999px;
             border: 3px solid #000;
             overflow: hidden;
-            /* recorta en círculo */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -60,11 +59,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* llena el círculo */
             object-position: center;
-            /* centra la cara */
         }
-
 
         .home-btn {
             width: 55px;
@@ -80,7 +76,6 @@
             font-size: 1.8rem;
         }
 
-        /* título principal igual estilo que en home */
         .section-title {
             font-size: 1.6rem;
             font-weight: 700;
@@ -91,7 +86,6 @@
             margin: 12px 0 18px 0;
         }
 
-        /* icono grande del historial académico */
         .icon-academic {
             display: block;
             margin: 0 auto 18px auto;
@@ -99,7 +93,6 @@
             height: 80px;
         }
 
-        /* botones de estudios */
         .study-btn {
             border: 3px solid #000;
             border-radius: 16px;
@@ -111,7 +104,6 @@
             margin-bottom: 12px;
         }
 
-        /* barra inferior de navegación con iconos */
         .bottom-nav-wrapper {
             border-top: 3px solid #000;
             margin-top: 22px;
@@ -139,6 +131,31 @@
             width: 38px;
             height: 38px;
         }
+
+        /* CONTACTO */
+        .contact-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+            border-top: 3px solid #000;
+            border-bottom: 3px solid #000;
+            padding: 6px 0;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 6px;
+        }
+
+        .contact-icons a {
+            font-size: 2rem;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -148,13 +165,10 @@
 
         <!-- CABECERA: foto + HOME -->
         <div class="top-bar">
-            <!-- misma foto que en el Home -->
             <div class="photo-small">
                 <img src="fotoPerfil.jpg" alt="Foto de perfil">
             </div>
 
-
-            <!-- botón para volver al Home -->
             <a href="diw.html" class="home-btn" title="Volver al inicio">
                 <i class="bi bi-house-fill"></i>
             </a>
@@ -166,7 +180,7 @@
         <!-- ICONO CENTRAL -->
         <img src="icon_academic.png" alt="Historial académico" class="icon-academic">
 
-        <!-- ESTUDIOS (textos más largos y bonitos) -->
+        <!-- ESTUDIOS -->
         <div class="px-2 mt-2">
             <div class="study-btn">
                 Bachillerato Científico-Tecnológico
@@ -182,7 +196,22 @@
             </div>
         </div>
 
-        <!-- NAVEGACIÓN INFERIOR A OTRAS PÁGINAS -->
+        <!-- NAVEGACIÓN INFERIOR -->
+        <div class="bottom-nav-wrapper">
+            <div class="bottom-nav">
+                <a href="info-personal.html" title="Datos personales">
+                    <img src="icon_personal.png" alt="Datos personales">
+                </a>
+                <a href="experiencia-laboral.html" title="Experiencia laboral">
+                    <img src="icon_experience.png" alt="Experiencia laboral">
+                </a>
+                <a href="habilidades.html" title="Habilidades">
+                    <img src="icon_skills.png" alt="Habilidades">
+                </a>
+            </div>
+        </div>
+
+        <!-- CONTACTO / REDES -->
         <div class="contact-title">Contacto</div>
         <div class="contact-icons">
             <a href="https://wa.me/34601098462" target="_blank" rel="noopener noreferrer" class="text-success">
